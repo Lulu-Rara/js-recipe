@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const me = {
+        name: "さら",
+        age: 19,
+        isMentor: false,
+        university: {
+          name: "筑波大学",
+          class: 2,
+        },
+        hobbies: ["ゲーム", "読書"],
+        hello: function () {
+          console.log(
+            "初心者で色々と分からないことがあると思いますが、精一杯頑張るのでよろしくお願いします!",
+          )
+        },
+      }
+
+      console.log(me)
+      console.log(`私の名前は${me.name}です`)
+      console.log(`としは${me.age}です`)
+      if (me.isMentor === true) {
+        console.log("私はメンターです")
+      } else if (me.isMentor === false) {
+        console.log("私はメンターではありません")
+      }
+      console.log(`大学は、${me.university.name}に通っています!`)
+      console.log(`学年は、${me.university.class}年です!`)
+      for (let i = 0; i < me.hobbies.length; i++) {
+        console.log(`私の趣味は${me.hobbies}です`)
+      }
+      me.hello()
+    </script>
+  </body>
+</html>

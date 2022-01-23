@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Number型
+      console.log(1)
+      console.log(1 + 1)
+      //文字型
+      console.log("やっほー")
+      console.log("やっほー" + "ヤッホー")
+      console.log("1" + "2")
+      //BooLean型 true or false
+      console.log(true)
+      const x = 2
+      const boolean_test = x === 2 // -> true 比較演算子を使って真偽を表す。
+      console.log(boolean_test)
+
+      //オブジェクト
+      //さらのデータ
+
+      const Sara = {
+        name: "さら", //キー:バリュー =>プロパティ
+        age: 19,
+        hobbies: ["ゲーム", "読書"], //配列
+        family: {
+          father: "さとし",
+          sister: "らむ", // オブジェクトの中にオブジェクトを作ることができる
+        },
+      }
+
+      console.log(Sara)
+
+      //nameだけを取り出すには(オブジェクトから中身だけを取り出すには)
+      console.log(Sara.name)
+    </script>
+  </body>
+</html>

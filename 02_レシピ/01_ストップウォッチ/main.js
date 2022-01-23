@@ -20,3 +20,4 @@ button.onclick = function () {
     button.textContent = "start"
   }
 }
+// 不動点小数の誤差
