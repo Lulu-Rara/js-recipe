@@ -9,6 +9,16 @@ addButton.onclick = function () {
   inputElement.value = ""
 }
 
+inputElement.addEventListener("keypress", entering)
+function entering(i) {
+  if (i.keycode === 13) {
+    const card = createCard(inputElement.value)
+    container.append(card)
+    inputElement.value = ""
+  }
+  return false
+}
+
 // カードを入れるhtmlの場所→テキスト表示場所→削除ボタン の作成
 const createCard = function (text) {
   const card = document.createElement("div")
